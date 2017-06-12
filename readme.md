@@ -1,26 +1,24 @@
-## Stellar Theme
-- a clean, responsive one page and blog theme.
+# Installation wizard for October
 
-#### Demo
-- [Click here](https://demo.zwiebl.xyz/?theme=stellar)
+The wizard installation is a recommended way to install October. It is simpler than the command-line installation and doesn't require any special skills.
 
-#### Download Link
-- coming soon
+1. Prepare a directory on your server that is empty. It can be a sub-directory, domain root or a sub-domain.
+1. [Download the installer archive file](https://github.com/octobercms/install/archive/master.zip).
+1. Unpack the installer archive to the prepared directory.
+1. Grant writing permissions on the installation directory and all its subdirectories and files.
+1. Navigate to the install.php script in your web browser.
+1. Follow the installation instructions.
 
-#### Features
-- One Pager with smooth scroll for Home Site
-- Single Page for all other Sites
-- Customizable Background Color in Theme Settings
+## Minimum System Requirements
 
-#### License
-- [Creative Commons](https://creativecommons.org/licenses/by/4.0/)
-- Use for personal & commercial stuff
-- Change however you like
+October CMS has a few system requirements:
 
-#### Feature Request
-- If you need other features in this theme you can send me a [mail](mailto:patrick@zwiebl.xyz)
+* PHP 5.5.9 or higher
+* PDO PHP Extension
+* cURL PHP Extension
+* MCrypt PHP Extension
+* ZipArchive PHP Library
+* GD PHP Library
 
-#### Credits
-- [Unsplash](https://unsplash.com/) for demo images
-- [HTML5 Up](https://html5up.net/stellar) for the Theme
-- OctoberCMS for the great CMS they made! <3# octobercms-personal-theme
+As of PHP 5.5, some OS distributions may require you to manually install the PHP JSON extension.
+When using Ubuntu, this can be done via ``apt-get install php5-json``.
