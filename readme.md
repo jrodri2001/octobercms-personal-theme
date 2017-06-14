@@ -1,3 +1,10 @@
+#Julio Rodriguez Website
+My website is based on October CMS, which is based on Laravel Framework.
+
+This was just an experiment to get to know better this CMS, and to use it as a Playground for my Laravel related projects.
+
+Feel free to use it as you wish.
+
 # Installation wizard for October
 
 The wizard installation is a recommended way to install October. It is simpler than the command-line installation and doesn't require any special skills.
@@ -22,3 +29,8 @@ October CMS has a few system requirements:
 
 As of PHP 5.5, some OS distributions may require you to manually install the PHP JSON extension.
 When using Ubuntu, this can be done via ``apt-get install php5-json``.
+
+## After instalation
+When the app is running normally, you might want to create .env file to set up certain variables specifically for your environment.
+
+Just rename the file *.env-example* to *.env* and modify the values to match your environment.
