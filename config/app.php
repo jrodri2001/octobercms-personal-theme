@@ -29,7 +29,7 @@ return [
     |
     */
 
-    'url' => 'http://october.local/',
+    'url' => 'http://juliorodriguez.ca',
 
     /*
     |--------------------------------------------------------------------------
@@ -81,7 +81,7 @@ return [
     |
     */
 
-    'key' => 'Qb5nv5owW6wEveyacsqlzV1eKjgdK6x4',
+    'key' => 'CHANGE_ME!!!!!!!!!!!!!!!!!!!!!!!',
 
     'cipher' => 'AES-256-CBC',
 
