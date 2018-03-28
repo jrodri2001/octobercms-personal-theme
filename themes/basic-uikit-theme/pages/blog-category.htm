@@ -1,0 +1,51 @@
+title = "Blog Category"
+url = "/blog/category/:slug/:page?"
+layout = "page"
+is_hidden = 0
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+categoryFilter = "{{ :slug }}"
+postsPerPage = 10
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = "blog-category"
+postPage = "blog-post"
+==
+<header class="major">
+    {% if not category %}
+    <h2>Category not found</h2>
+    {% else %}
+    <h2>{{ category.name }}</h2>
+    {% endif %}
+</header>
+
+{% set posts = blogPosts.posts %}
+
+<div class="post-list">
+    {% for post in posts %}
+            <h2>{{ post.title }}</h2>
+
+            <p class="info">
+                Posted
+                {% if post.categories.count %} in {% endif %}
+                {% for category in post.categories %}
+                    <a href="{{ category.url }}">{{ category.name }}</a>{% if not loop.last %}, {% endif %}
+                {% endfor %}
+                on {{ post.published_at|date('M d, Y') }}
+            </p>
+
+            <p class="excerpt">{{ post.summary|raw }}</p>
+
+            <ul class="actions">
+                <li><a href="{{ post.url }}" class="button">Read more...</a></li>
+            </ul>
+            {% if not loop.last %}
+            <hr>
+            {% endif %}
+    {% else %}
+        <h2>{{ noPostsMessage }}</h2>
+    {% endfor %}
+</div>
+
+{% partial "components/pagination" %}

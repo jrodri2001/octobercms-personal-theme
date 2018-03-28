@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "octobercms-analytics-171418",
+  "private_key_id": "da9547980e120d80d8b919229c60f1b341d523e0",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCjthidN0CiAMRY\n7dl1jvFcxi80UqnrgRy3GNQJdlR5ZKv3eDI1WUkAp1HAa0iCPwQjDGqJlYzVBXap\n7LWFmuO+8y5N1qLzprkVpt8mKCWNIz4lIhufYRbltOj51RajHDQth62G/8KXkZ9C\nhr9KqupZX+9kkGIyS0ou6J7AkhKziNHuWQNr4uvVqP4V0UhxMkgUaa7nOvVOWj3d\n0a1LyjAEXips/pnUYtY0nWzWmTBXV3OMwzjDnYfAzLCBkJHE3zRqhNNCnC7DXXPG\nXDbqdlElmMoAypjKLsSMEqXbwL0rVe6vpLPC3vXGGHfsSOrqYjQU/hFPUr7NvOTu\nZXtnd97VAgMBAAECggEAEG/UANTvVFSnYhZfYwI7EYmEa8hw7whDjc6cW2baDGYj\nLfGPePPB9KLX/m3HFeylya8Rc0bkoO6vf1gY0ZU/kIhx+ba3Had7pcTfWsFlI8qK\nDshh5Zql5eJIEe1nHHFUe83Himpba0RfrRpCUojehqKvMnWcplgQ1qzcY5FG92d3\n6ymVjLGglx2c2ywwZAwGn9ImQv8UKeGErJO9uUV6fP/OxgKMfLJgF3EFhfZvteUh\nIcxeYyS6hjdmm4TST8bVCEtwJEpLSFFY95yIYk5dlOuJXrkTjO117ByEtt2doU01\nlPA1/kuNThZD3cc2cJexQ/NonP38pA9SZUpIt6vSgQKBgQDlnerg1jP7V2rufraP\nWtT+rrYkNGsQPC1hT4vJlwanwZpmhz9tj3VufZsQ5XHPSxiNZsjE83VOjPRUQEz1\nclf628VrfgYCMlHkWaMNvM95THEJH0dec80UHGSStCCWO076Up8+iaFGhKgkSVdz\naiSxXDCKyHj3Y1OFUr1GJ8QoOQKBgQC2hZhIAFE0UN7SFqy25kK6EwkNsEUcl1K7\n8vHrStDFA1Y3JLkBqGovJyuPzdQ2FT05mqMj/1hm11SD+xmtQxO4lHzIG/O4XsEf\nVrjZi2KvQihJbhnIV+YDelKxIt3CcnwGzIiIvA9TEB97eW19bBT58WxlDV0Ps2Z6\nCkdVE1QTfQKBgGHxmYXseOHmaQtwa4j8sswsVC9fWKflM2pF1xfXXxRhxe2kFU8z\nmWDXHTT42jIVE1UFmfBA9THbeEET6H/uFU9BPZXbfM6lDj98aMvsVQelrrW4bOYC\nOWExt0jIovnSNJ8cbSbs6Ck/XsWTr0Tg6uPosiAQ4WCNMsw0/d2WCtspAoGAe+wY\niEou2CZQIrPicAvGIi/qZbDYO6FCOvmn5ujU9e5eCvKT6dw+u+UMXoaRHmctOn8T\nZM1pZ+mrKDDELi7spNWsIvFXeEZdOLnYp1tLlVKFp9VpC+0h7hqPKlVR20N/kd4s\nlSmZ/ftkZKD9BbrsQwb3YWTBWnejjBiOdeS5oMECgYBzktQoiwSrmtgEB87wKK9F\n/WBMWU64oI9sVSW1NtBiz7qQexpJGJJgGaKabP2yCFyoaQLO8reCaMLPGm3pLOkM\nlNII6OnKiIOhN0bvUbd0txr2RlbTmrikqN68LDLWzD90RfpXUd1uUyvi8gkWnqox\ndFX6FjRjtDzzymNAQYaraQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "octobercms-analytics@octobercms-analytics-171418.iam.gserviceaccount.com",
+  "client_id": "101846248667164451343",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/octobercms-analytics%40octobercms-analytics-171418.iam.gserviceaccount.com"
+}

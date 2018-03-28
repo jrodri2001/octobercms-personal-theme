@@ -1,0 +1,37 @@
+description = "Homepage Layout"
+==
+<html>
+<head>
+    {% partial "all_pages/header" %}
+</head>
+<body id="homepage">
+    <div id="wrapper">  
+        <div class="uk-offcanvas-content">
+            <!-- mobile nav -->
+            {% partial "all_pages/mobile_nav.htm"%}
+            <!-- end mobile nav -->
+            
+            <!-- desktop nav -->
+            {% partial "all_pages/desktop_nav.htm"%}
+            <!-- end desktop nav -->
+            
+            <!-- main container -->                       
+            {% page %} 
+            <!-- end main container -->
+        
+            <div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
+                <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+        
+                    <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                       {% partial "navigation/main_menu"%}
+                    </ul>
+        
+                </div>
+            </div>     
+        </div>
+
+        {% partial "all_pages/footer" %}
+    </div>
+    {% partial "all_pages/scripts" %}
+</body>
+</html>

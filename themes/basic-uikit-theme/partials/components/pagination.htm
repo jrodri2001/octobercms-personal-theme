@@ -1,0 +1,24 @@
+==
+{% if posts.lastPage > 1 %}
+    <div class="uk-section">
+        <div class="uk-container uk-container-small">
+            <ul class="uk-pagination uk-flex-center" >
+            {% if posts.currentPage > 1 %}
+                <li><a href="{{ this.page.baseFileName|page({ (pageParam): (posts.currentPage-1) }) }}">
+                    <span class="uk-margin-small-right" uk-pagination-previous></span>Previous</a></li>
+            {% endif %}
+    
+            {% for page in 1..posts.lastPage %}
+                <li class="{{ posts.currentPage == page ? 'uk-active' : null }}">
+                    <a href="{{ this.page.baseFileName|page({ (pageParam): page }) }}">{{ page }}</a>
+                </li>
+            {% endfor %}
+    
+            {% if posts.lastPage > posts.currentPage %}
+                <li class="uk-margin-auto-left"><a href="{{ this.page.baseFileName|page({ (pageParam): (posts.currentPage+1) }) }}">Next
+                <span class="uk-margin-small-left" uk-pagination-next></span></a></li>
+            {% endif %}
+        </ul>
+        </div>
+    </div>    
+{% endif %}

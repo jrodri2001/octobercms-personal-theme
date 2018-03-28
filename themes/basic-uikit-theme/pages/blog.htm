@@ -1,0 +1,48 @@
+title = "Blog"
+url = "/blog/:page?/"
+layout = "page"
+is_hidden = 0
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+postsPerPage = 2
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = "blog-category"
+postPage = "blog-post"
+==
+{% set posts = blogPosts.posts %}
+
+<div class="uk-section uk-section-primary">
+    <div class="uk-container uk-container-small">
+    <h1>Julio's Blog</h1>
+    <span class="uk-text-lead">Collection of developer's experiences</span>
+    <p>As every other developer out there, I usually encounter obstacles and road blocks that make me spend ridiculous amount of time banging my head against the monitor, so, in a try to be somewhat helpfull, and hoping to make someone's life easier, I share these experiences with the world.</p>
+    </div>
+</div>
+
+<div class="uk-section uk-section">
+    <div class="uk-container uk-container-small">
+        {% for post in posts %}
+            <article class="uk-article">
+                <h2 class="uk-article-title"><a class="uk-link-reset" href="{{ post.url }}">{{ post.title }}</a></h2>
+                <p class="uk-article-meta">Written by <a href="#">Julio Rodriguez</a> on {{ post.published_at|date('M d, Y') }}.
+                    {% if post.categories.count %} Posted in {% endif %}
+                    {% for category in post.categories %}
+                        <a href="{{ category.url }}">{{ category.name }}</a>{% if not loop.last %}, {% endif %}
+                    {% endfor %}
+                </p>
+                
+                <p>{{ post.summary|raw }}</p>
+                
+                <div class="uk-grid-small uk-child-width-auto" uk-grid>
+                    <div>
+                        <a class="uk-button uk-button-text" href="{{ post.url }}">Read more</a>
+                    </div>                
+                </div>
+            </article>
+        {% endfor %}
+    </div>
+</div>
+
+{% partial "components/pagination" %}

@@ -1,0 +1,68 @@
+1522251102a:1:{s:19:"components/hero.htm";a:6:{s:8:"fileName";s:19:"components/hero.htm";s:7:"content";s:2431:"==
+<div class="uk-cover-container">
+    <canvas width="600" height="700"></canvas>
+    <img uk-cover src="{{image}}" alt="Hero banner" class="" >
+    <div class="uk-position-center uk-light uk-text-center">
+        <p uk-scrollspy="cls: uk-animation-fade; delay: 500; repeat: true" class="uk-text-center"><img class="uk-animation-fade fade" src="{{ "julio-copei.png"|media|resize(250, 100) }}" alt="" uk-width-medium></p>
+        <div class="uk-h1 uk-light uk-overlay uk-overlay-primary uk-animation-fade">
+            <p uk-scrollspy="cls: uk-animation-fade; delay: 500; repeat: true" class="uk-animation-fade fade">Julio Rodriguez</p>
+            
+            <a uk-scrollspy="cls: uk-animation-slide-top; repeat: true; delay:250" href="https://facebook.com/jrodri2001" target="_blank" uk-icon="icon: facebook" title="Facebook" uk-tooltip="delay: 400; animation: uk-animation-slide-bottom, uk-animation-slide-top"></a>
+            <a uk-scrollspy="cls: uk-animation-slide-top; repeat: true; delay:750" href="https://www.instagram.com/jrodri2001/" target="_blank" uk-icon="icon: instagram" title="Instagram" uk-tooltip="delay: 400; animation: uk-animation-slide-bottom, uk-animation-slide-top"></a>
+            <a uk-scrollspy="cls: uk-animation-slide-top; repeat: true; delay:1250" href="https://twitter.com/jrodri" target="_blank" uk-icon="icon: twitter" title="twitter" uk-tooltip="delay: 400; animation: uk-animation-slide-bottom, uk-animation-slide-top"></a>
+            <a uk-scrollspy="cls: uk-animation-slide-top; repeat: true; delay:1750" href="mailto:juliojrg@gmail.com" uk-icon="icon: mail" title="juliojrg@gmail.com" uk-tooltip="delay: 400; animation: uk-animation-slide-bottom, uk-animation-slide-top"></a>
+        </div>
+        <p class="uk-animation-fade">Full Stack Developer</p>
+    </div> 
+</div>
+
+
+<!-- <div class="uk-container">
+    <div>
+        <div class="uk-background-cover uk-height-large uk-panel uk-flex uk-flex-center uk-flex-middle uk-light" style="background-image: url({{image}})">
+        <div class="uk-child-width-1">
+            <div>
+            <img src="{{ "julio-copei.png"|media|resize(250, 100) }}" alt="" uk-width-medium>
+            </div>
+        </div>
+            <div class="uk-child-width-1">
+            <div>
+            <p class="uk-h1 uk-light">Julio Rodriguez</p>
+            </div>
+            </div>
+        </div>
+    </div>    
+</div> -->";s:5:"mtime";i:1498253993;s:6:"markup";s:2428:"<div class="uk-cover-container">
+    <canvas width="600" height="700"></canvas>
+    <img uk-cover src="{{image}}" alt="Hero banner" class="" >
+    <div class="uk-position-center uk-light uk-text-center">
+        <p uk-scrollspy="cls: uk-animation-fade; delay: 500; repeat: true" class="uk-text-center"><img class="uk-animation-fade fade" src="{{ "julio-copei.png"|media|resize(250, 100) }}" alt="" uk-width-medium></p>
+        <div class="uk-h1 uk-light uk-overlay uk-overlay-primary uk-animation-fade">
+            <p uk-scrollspy="cls: uk-animation-fade; delay: 500; repeat: true" class="uk-animation-fade fade">Julio Rodriguez</p>
+            
+            <a uk-scrollspy="cls: uk-animation-slide-top; repeat: true; delay:250" href="https://facebook.com/jrodri2001" target="_blank" uk-icon="icon: facebook" title="Facebook" uk-tooltip="delay: 400; animation: uk-animation-slide-bottom, uk-animation-slide-top"></a>
+            <a uk-scrollspy="cls: uk-animation-slide-top; repeat: true; delay:750" href="https://www.instagram.com/jrodri2001/" target="_blank" uk-icon="icon: instagram" title="Instagram" uk-tooltip="delay: 400; animation: uk-animation-slide-bottom, uk-animation-slide-top"></a>
+            <a uk-scrollspy="cls: uk-animation-slide-top; repeat: true; delay:1250" href="https://twitter.com/jrodri" target="_blank" uk-icon="icon: twitter" title="twitter" uk-tooltip="delay: 400; animation: uk-animation-slide-bottom, uk-animation-slide-top"></a>
+            <a uk-scrollspy="cls: uk-animation-slide-top; repeat: true; delay:1750" href="mailto:juliojrg@gmail.com" uk-icon="icon: mail" title="juliojrg@gmail.com" uk-tooltip="delay: 400; animation: uk-animation-slide-bottom, uk-animation-slide-top"></a>
+        </div>
+        <p class="uk-animation-fade">Full Stack Developer</p>
+    </div> 
+</div>
+
+
+<!-- <div class="uk-container">
+    <div>
+        <div class="uk-background-cover uk-height-large uk-panel uk-flex uk-flex-center uk-flex-middle uk-light" style="background-image: url({{image}})">
+        <div class="uk-child-width-1">
+            <div>
+            <img src="{{ "julio-copei.png"|media|resize(250, 100) }}" alt="" uk-width-medium>
+            </div>
+        </div>
+            <div class="uk-child-width-1">
+            <div>
+            <p class="uk-h1 uk-light">Julio Rodriguez</p>
+            </div>
+            </div>
+        </div>
+    </div>    
+</div> -->";s:4:"code";N;s:17:"_PARSER_ERROR_INI";s:0:"";}}

@@ -17,11 +17,11 @@
 		p {
 			font-size: 1.25em;
 			letter-spacing: _font(letter-spacing);
-		}
-
+		}		
+		
 		&.alt {
-			@include padding(6em, 5em, (1em, 0, 0, 0));
-
+			@include padding(6em, 5em, (1em, 0, 0, 0));			
+			
 			h1 {
 				font-size: 3.25em;
 			}

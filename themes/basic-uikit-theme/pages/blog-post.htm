@@ -1,0 +1,51 @@
+title = "blog-post"
+url = "/blog/post/:slug"
+layout = "page"
+is_hidden = 0
+
+[blogPost]
+slug = "{{ :slug }}"
+categoryPage = "blog-category"
+==
+{% if post %}
+    {% set post = blogPost.post %}    
+    
+    <div class="uk-section uk-section-default">
+        <div class="uk-container uk-container-default">
+            <article class="uk-article">
+                    <h2 class="uk-article-title"><a class="uk-link-reset" href="{{ post.url }}">{{ post.title }}</a></h2>
+                    
+                    {% if post.featured_images.count %}
+                        <div class="featured-images text-center">
+                            {% for image in post.featured_images %}
+                                <p>
+                                    <img
+                                        data-src="{{ image.filename }}"
+                                        src="{{ image.path }}"
+                                        alt="{{ image.description }}"
+                                        style="max-width: 100%" />
+                                </p>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                    
+                    <p class="uk-article-meta">Written by <a href="#">Julio Rodriguez</a> on {{ post.published_at|date('M d, Y') }}.
+                        {% if post.categories.count %} Posted in {% endif %}
+                        {% for category in post.categories %}
+                            <a href="{{ category.url }}">{{ category.name }}</a>{% if not loop.last %}, {% endif %}
+                        {% endfor %}
+                    </p>
+                    
+                    <p>{{ post.content_html|raw }}</p>
+                    
+                    <div class="uk-grid-small uk-child-width-auto" uk-grid>
+                        <div>
+                            <a class="uk-button uk-button-text" href="{{ post.url }}">Read more</a>
+                        </div>                
+                    </div>
+                </article>
+        </div>
+    </div>
+{% else %}
+<h2>Post not found</h2>
+{% endif %}

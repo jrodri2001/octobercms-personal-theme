@@ -62,7 +62,7 @@ return [
     |
     */
 
-    'backendTimezone' => 'UTC',
+    'backendTimezone' => 'America/Toronto',
 
     /*
     |--------------------------------------------------------------------------
@@ -191,7 +191,7 @@ return [
     |
     */
 
-    'enableAssetDeepHashing' => null,
+    'enableAssetDeepHashing' => true,
 
     /*
     |--------------------------------------------------------------------------

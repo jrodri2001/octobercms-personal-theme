@@ -11,9 +11,9 @@ categoryPage = "blog-category"
 function onEnd()
 {
     // Optional - set the page title to the post title
-    if (isset($this->post))
-    $this->page->title = $this->post->title;
-    $this->page->description = str_limit($this->post->summary, 60, "...");
+    if (isset($this->blogPost->post->title))
+    $this->page->title = $this->blogPost->post->title;
+    $this->page->description = str_limit($this->post->summary, 100, "...");
 }
 ?>
 ==
@@ -26,15 +26,11 @@ function onEnd()
 
 {% if post.featured_images.count %}
     <div class="featured-images text-center">
-        {% for image in post.featured_images %}
-            <p>
-                <img
-                    data-src="{{ image.filename }}"
-                    src="{{ image.path }}"
-                    alt="{{ image.description }}"
-                    style="max-width: 100%" />
-            </p>
+    
+        {% for image in post.featured_images %}           
+                <img data-src="{{ image.filename }}" src="{{ image.path }}" alt="{{ image.description }}"/>           
         {% endfor %}
+        
     </div>
 {% endif %}
 

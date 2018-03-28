@@ -1,0 +1,61 @@
+title = "Portfolio"
+url = "/portfolio/:page?/"
+layout = "page"
+is_hidden = 0
+
+[portfolio]
+category = 0
+itemsPerPage = 2
+order = "asc"
+pageNumber = "{{ :page }}"
+selectedTag = "{{ :selected_tag }}"
+selectedCat = "{{ :selected_cat }}"
+catListPage = "portafolio-category"
+itemPage = "portafolio-details"
+tagListPage = "portafolio-tag"
+==
+<div class="uk-section uk-section">
+    <div class="uk-container uk-container-small">
+        <div class="uk-child-width-1-2@s uk-margin" uk-grid>
+            
+            {% for p in portfolio.portfolio %}            
+                <div>
+                    <div class="uk-card uk-card-hover uk-box-shadow-medium">
+                        {% if p.images|length >0 %}                        
+                        <div class="uk-card-media-left uk-cover-container">
+                            <img src="{{ p.images.first().path }}" alt="" uk-cover>
+                            <canvas width="600" height="400"></canvas>
+                        </div>
+                        {% endif %}
+                        <div class="uk-card-header">
+                            <h3 class="uk-card-title">{{ p.title }}</h3>
+                        </div>
+                        
+                        <div class="uk-card-body">
+                            <p>{{p.description|truncate(200, true)|raw}}</p>
+                        </div>
+                        
+                        <span class="uk-card-badge uk-label">
+                        <a class="uk-link-reset" href="{{p.category.pageUrl}}">
+                        {{p.category.name}}
+                        </a>
+                        </span>
+                                                
+                        <div class="uk-card-footer uk-text-center">
+                            <h6>Tags</h6>                            
+                            {% for t in p.tags %}
+                                <div class="uk-label"><a class="uk-link-reset" href="{{t.pageUrl}}">{{ t.name }}</a></div>
+                            {% endfor %}                            
+                            <p>
+                                <a href="#" class="uk-button uk-button-text">Read more</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+            
+        </div>
+    </div>
+</div>
+
+{% partial "components/pagination" posts=portfolio.portfolio pageParam = 'page' %}

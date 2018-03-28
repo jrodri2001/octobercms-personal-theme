@@ -1,0 +1,44 @@
+1522251102a:1:{s:25:"all_pages/desktop_nav.htm";a:6:{s:8:"fileName";s:25:"all_pages/desktop_nav.htm";s:7:"content";s:995:"==
+<!-- <div id="desktop-nav" class="uk-navbar-container"> -->
+   <!--  <div class="uk-container uk-container-small"> -->
+    <nav class="{%if class%}{{class}} {%endif%}uk-navbar-container uk-visible@m" uk-navbar uk-sticky="animation: uk-animation-slide-top; media:@m">
+    
+        <div class="uk-navbar-left">
+            <a href="{{ 'home'|page }}" class="uk-navbar-item uk-logo">
+                <img src="{{ "julio-logo.svg" |media }}" width="60" height="60" alt="Logo"  class="logo" uk-svg>
+            </a>
+            <div >
+                <span class="uk-text-bold uk-text-uppercase">Julio Rodriguez</span><br>
+                Full stack developer <span class="uk-margin-small-right" uk-icon="icon: code"></span>
+            </div>
+        </div>
+        
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+                {% partial "navigation/main_menu"%}
+            </ul>
+        </div>
+    </nav>
+    <!-- </div> -->
+<!-- </div> -->";s:5:"mtime";i:1498512339;s:6:"markup";s:992:"<!-- <div id="desktop-nav" class="uk-navbar-container"> -->
+   <!--  <div class="uk-container uk-container-small"> -->
+    <nav class="{%if class%}{{class}} {%endif%}uk-navbar-container uk-visible@m" uk-navbar uk-sticky="animation: uk-animation-slide-top; media:@m">
+    
+        <div class="uk-navbar-left">
+            <a href="{{ 'home'|page }}" class="uk-navbar-item uk-logo">
+                <img src="{{ "julio-logo.svg" |media }}" width="60" height="60" alt="Logo"  class="logo" uk-svg>
+            </a>
+            <div >
+                <span class="uk-text-bold uk-text-uppercase">Julio Rodriguez</span><br>
+                Full stack developer <span class="uk-margin-small-right" uk-icon="icon: code"></span>
+            </div>
+        </div>
+        
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+                {% partial "navigation/main_menu"%}
+            </ul>
+        </div>
+    </nav>
+    <!-- </div> -->
+<!-- </div> -->";s:4:"code";N;s:17:"_PARSER_ERROR_INI";s:0:"";}}
