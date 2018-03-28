@@ -1,4 +1,4 @@
-1522251102a:1:{s:19:"components/hero.htm";a:6:{s:8:"fileName";s:19:"components/hero.htm";s:7:"content";s:2431:"==
+1522259992a:1:{s:19:"components/hero.htm";a:6:{s:8:"fileName";s:19:"components/hero.htm";s:7:"content";s:2431:"==
 <div class="uk-cover-container">
     <canvas width="600" height="700"></canvas>
     <img uk-cover src="{{image}}" alt="Hero banner" class="" >

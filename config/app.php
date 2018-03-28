@@ -16,7 +16,7 @@ return [
     |
     */
 
-    'debug' => true,
+    'debug' => env('APP_DEBUG', true),
 
     /*
     |--------------------------------------------------------------------------
@@ -29,7 +29,7 @@ return [
     |
     */
 
-    'url' => 'http://juliorodriguez.ca',
+    'url' => env('APP_URL', 'http://juliorodriguez.ca'),
 
     /*
     |--------------------------------------------------------------------------
@@ -81,7 +81,7 @@ return [
     |
     */
 
-    'key' => 'CHANGE_ME!!!!!!!!!!!!!!!!!!!!!!!',
+    'key' => env('APP_KEY', 'base64:dzzBbKwuZrVF2h/jUHV1DwlJtvEeDNBKSqt5LN80rZA='),
 
     'cipher' => 'AES-256-CBC',
 
